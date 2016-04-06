@@ -1,6 +1,6 @@
 FROM debian:latest
 
-MAINTAINER zopanix <zopanix@gmail.com>
+MAINTAINER Alexis King <lexi.lambda@gmail.com>
 
 WORKDIR /opt
 
@@ -11,8 +11,6 @@ CMD ["./smart_launch.sh"]
 EXPOSE 34197/udp
 
 VOLUME "/opt/factorio/saves"
-
-VOLUME "/opt/factorio/mods"
 
 ENV FACTORIO_AUTOSAVE_INTERVAL 2
 
